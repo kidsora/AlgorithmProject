@@ -1,0 +1,27 @@
+Reading_Sentence_Algo
+
+VAR
+length, words, vowels : INTEGER;
+
+BEGIN
+   length := 0;
+   words := 0;
+   vowels := 0;
+   print("write a sentence")
+   read(ch)
+   if (ch=".") then 
+     break
+   end if  
+   length=length+1
+   if (ch in('a','e','i','o','u','A','E','I','O','U')) then 
+     vowels=vowels+1
+   end if
+   if (ch=" ") then
+     words=words+1
+   end if
+   print("the length of the sentence is", length) 
+   print("number of words are", words)
+   print("number of vowels are", vowels) 
+END   
+   
+  
